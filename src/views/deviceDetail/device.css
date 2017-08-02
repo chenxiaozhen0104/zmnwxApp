@@ -1,0 +1,253 @@
+.container {
+        width: 750px;
+        align-items: center;
+        background-color: #fff;
+    }
+    /*设备名称*/
+    
+    .deviceDetail-title,
+    .deviceDetail-serach {
+        width: 750px;
+        /*height: 80px;*/
+        /*margin-top: 20px;*/
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        border-bottom-color: #dedede;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top:20px;
+    }
+    
+    .deviceDetail-serach {
+        /*height: 80px;*/
+        flex-direction: row;
+    }
+    
+    .deviceDetail-text {
+        width: 590px;
+        height: 80px;
+        padding-left: 20px;
+        border: none;
+        flex-wrap:wrap;
+    }
+    /*类目*/
+    .nothing{
+        width:750px;
+        height:60px;
+        justify-content: flex-end;
+        align-items:center;
+        /*border-bottom-width:1px;
+        border-bottom-color:#cdcdcd;
+        border-bottom-style:solid;*/
+    }
+    .nothing-text{
+        font-size:30px;
+        color:#ccc;
+    }
+    .import {
+        width: 750px;
+        height: 80px;
+        flex-direction: row;
+    }
+    .clear-box{
+        width:80px;
+        height:80px;
+        justify-content: center;
+        align-items:center;
+    }
+    .clear {
+        font-size: 26px;
+        color: #0092fc;
+    }
+    .deviceDetail-category {
+        width: 750px;
+    }
+    
+    .img-search {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .deviceDetail-header {
+        flex-direction: row;
+    }
+    
+    .search-box,
+    .qrCode-box,.select-box
+     {
+        width: 80px;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .deviceDetail-content {
+        width: 730px;
+    }
+    
+    .history {
+        width: 730px;
+    }
+    
+    .history-header {
+        width: 730px;
+        height: 80px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    .history-header-text{
+        color:#999;
+        font-size:30px;
+    }
+    .history-text {
+        color: #333;
+        font-size: 30px;
+        /*width:100px;
+        height:60px;*/
+        text-align:center;
+        /*line-height:60px;*/
+        background-color:#eee;
+        padding-left:10px;
+        padding-right:10px;
+        padding-top:10px;
+        padding-bottom:10px;
+
+    }
+    
+    .history-content {
+        width: 730px;
+    }
+    
+    .history-record {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 80px;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .delete-box,
+    .history-details-imgBox {
+        width: 80px;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .delete-img,
+    .history-details-img,
+    .scan-code,.select-btn {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .history-details-img {
+        margin-right: 20px;
+    }
+    
+    .history-details-content {
+        width: 720px;
+        height: 80px;
+        /*border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: #cdcdcd;*/
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .search-content {
+        width: 720px;
+        justify-content: center;
+        /*background-color: #dedede;*/
+    }
+    
+    .search-details {
+        width: 720px;
+        height: 80px;
+        justify-content: center;
+        border-bottom-style: solid;
+        border-bottom-color: #cdcdcd;
+        border-bottom-width: 1px;
+        padding-left: 20px;
+    }
+    
+    .search-details:active {
+        background-color: #efefef;
+    }
+    
+    .search-details-text {
+        font-size: 30px;
+        color: #333;
+    }
+    /*二维码*/
+    .import-qrCode{
+        width:670px;
+        height: 80px;
+        flex-direction: row;
+    }
+    .qrCode-content {
+        width: 730px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /*图片上传*/
+    
+    .deviceDetail-imgList {
+        margin-top: 20px;
+        width: 750px;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    .imgList {
+        width: 750px;
+        flex-direction: row;
+        height: 200px;
+        padding-left: 20px;
+    }
+    
+    .uploadImg {
+        width: 200px;
+        height: 200px;
+        margin-right: 20px;
+    }
+    /*保存按钮*/
+    
+    .footer-bottom {
+        height: 100px;
+        width: 750px;
+        justify-content: center;
+        align-items: center;
+        background-color: #f8f8f8;
+        /*position:absolute;
+        bottom:0;
+        left:0;*/
+        margin-top:40px;
+    }
+
+    .footer-box {
+        height: 70px;
+        width: 720px;
+        text-align: center;
+        color: white;
+        line-height: 70px;
+        background-color: #3879d9;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-sub {
+        color: white;
+        font-size: 26px;
+        text-align: center;
+        opacity: 1;
+    }

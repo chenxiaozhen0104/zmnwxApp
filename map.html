@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://webapi.amap.com/js/marker.js"></script>
+    <script src="http://webapi.amap.com/maps?v=1.3&key=2e0f9e3dbaab8f0a421f44e8e9784fa9"></script>
+    <title>人员定位</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+        
+        #container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .amap-marker-label {}
+    </style>
+</head>
+
+<body>
+    <div id="container"></div>
+    <script src="https://cdn.bootcss.com/fetch/2.0.3/fetch.min.js"></script>
+    <script>
+        var url = `http://192.168.1.240/api/user/GetUserList?appType=2&userId=636234887666745830` //decodeURIComponent(location.search.replace('?', ''))
+        var map = new AMap.Map('container', {
+            resizeEnable: true,
+            zoom: 11,
+            center: [120.397428, 39.90923]
+        })
+
+        fetch(url, { method: 'POST' }).then(function (res) {
+            res.json().then(function (data) {
+                var makers = data.filter(function (item) {
+                    return item.Longitude && item.Latitude
+                }).map(function (item) {
+                    var maker = new AMap.Marker({
+                        map: map,
+                        icon: "http://webapi.amap.com/theme/v1.3/markers/n/mark_b.png",
+                        position: [item.Longitude, item.Latitude]
+                    })
+                    maker.setLabel({
+                        offset: new AMap.Pixel(0, -20),
+                        content: item.RealName
+                    })
+                    return maker;
+                })
+                map.setFitView()//地图显示所有点位
+            })
+        })
+    </script>
+</body>
+
+</html>

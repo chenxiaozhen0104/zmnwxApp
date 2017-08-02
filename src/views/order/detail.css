@@ -1,0 +1,400 @@
+.orderDetail-container {
+        width: 750px;
+        height: auto;
+    }
+    
+    .mask {
+        width: 750px;
+        height: 1334px;
+        background-color: rgba(40, 40, 40, 0.6);
+        position: absolute;
+        left: 0;
+        top: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .maskBox {
+        margin-top: -140px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .mask-img {
+        width: 600px;
+        height: 600px;
+    }
+    
+    .mask-text {
+        font-size: 30px;
+        color: white;
+        margin-bottom: 30px;
+    }
+    
+    .orderDetail-list {
+        padding-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+        background-color: #eeeeee;
+    }
+    
+    .orderDetail-style {
+        background-color: #fff;
+        margin-bottom: 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #d6d6d6
+    }
+    
+    .orderDetail-top {
+        position: relative;
+    }
+    
+    .orderDetail-row {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        flex-direction: row;
+    }
+    
+    .work-status {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 98px;
+        width: 98px;
+    }
+    
+    .orderDetail-describe {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .order-title {
+        width: 150px;
+        text-align: right;
+        color: #c0c0c0;
+    }
+    
+    .repair-img-text {
+        width: 150px;
+        color: #c0c0c0;
+    }
+    
+    .order-title,
+    .order-text,
+    .repair-img-text {
+        font-size: 26px;
+    }
+    
+    .order-text {
+        width: 570px;
+        color: #728594;
+        padding-left: 30px;
+    }
+    
+    .repair-img {
+        align-items: center;
+        /*justify-content: space-between;*/
+        margin-bottom: 100px;
+        background-color: transparent;
+        flex-wrap: wrap;
+    }
+    
+    .repair-img-img {
+        flex-direction: row;
+    }
+    
+    .showImg {
+        height: 205px;
+        width: 205px;
+        margin-left: 25px;
+    }
+    
+    .order-phone {
+        color: #3879d9;
+    }
+    
+    .orderDetail-maintain {
+        margin-bottom: 100px;
+    }
+    /*底部按钮样式*/
+    .orderDetail-bottom {
+        height: 100px;
+        width: 750px;
+        justify-content: center;
+        align-items: center;
+        background-color: #f8f8f8;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    
+    /*.orderDetail-cancel {
+        height: 70px;
+        width: 720px;
+        text-align: center;
+        color: white;
+        font-size: 26px;
+        opacity: 1;
+        line-height: 70px;
+        background-color: #3879d9;
+    }*/
+    .twoBtn {
+        width: 720px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .orderDetail-cancel,
+    .orderDetail-left-cancel,
+    .orderDetail-right-transfer {
+        text-align: center;
+        color: white;
+        font-size: 26px;
+        line-height: 70px;
+        height: 70px;
+    }
+    
+    .orderDetail-cancel {
+        width: 720px;
+        opacity:1;
+        background-color: #3879d9;
+    }
+    
+    .orderDetail-left-cancel {
+        width: 330px;
+        background-color: #3879d9;
+    }
+    
+    .orderDetail-right-transfer {
+        width: 330px;
+        background-color: #e7bc10;
+    }
+    /*取消保修单弹框样式*/
+    
+    .cancel-descript,
+    .cancel-list {
+        width: 750px;
+        height: 1334px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(40, 40, 40, 0.6);
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cancel-box {
+        width: 700px;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .cancel-content,
+    .cancel-list-content {
+        width: 650px;
+        background-color: white;
+        padding: 25px;
+    }
+    
+    .cancel-list-content {
+        padding-top: 50px;
+        flex-direction: row;
+        height: 400px;
+        flex-wrap: wrap;
+    }
+    
+    .list-username {
+        height: 58px;
+        width: 160px;
+        white-space:inherit;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #0092FC;
+        color: #0092FC;
+        font-size: 30px;
+        line-height: 48px;
+        text-align: center;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .list-username:active {
+        background-color: #0092FC;
+        color: white;
+        border: none;
+    }
+    
+    .descript-title {
+        color: #728594;
+        font-size: 30px;
+        padding-bottom: 15px;
+    }
+    
+    .descript-text {
+        flex: 1;
+        font-size: 32px;
+        height: 60px;
+        line-height: 60px;
+        padding-left:20px;
+        margin-top:20px;
+        margin-bottom:10px;
+        border-top-color:transparent;
+        border-left-color:transparent;
+        border-right-color:transparent;
+        border-width: 2px;
+        border-bottom-color: #c0c0c0;
+        border-bottom-style: solid;
+    }
+    
+    .descript-commit {
+        margin-top: 40px;
+        width: 600px;
+        height: 70px;
+        background-color: #0092FC;
+        text-align: center;
+        border-radius: 5px;
+        line-height: 70px;
+        font-size: 30px;
+        color: white;
+        opacity: 1;
+    }
+    
+    .descript-commit:active {
+        opacity: 0.8;
+    }
+    
+    .workOrder-delete {
+        height: 60px;
+        width: 60px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    /*时间轴样式*/
+    
+    .track-rcol {
+        width: 750px;
+        padding-bottom: 150px;
+        background-color: #eeeeee;
+    }
+    
+    .track-list {
+        padding-left: 40px;
+        position: relative
+    }
+    
+    .time-style {
+        padding-top: 5px;
+        padding-left: 40px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+        line-height: 18px;
+        border-left-style: solid;
+        border-left-color: #d6d6d6;
+        border-left-width: 2px;
+        color: #728594;
+        font-size: 26px;
+    }
+    
+    .time-circle {
+        position: absolute;
+        left: 26px;
+        top: 0;
+        height: 30px;
+        width: 30px;
+    }
+    
+    .time,
+    .txt {
+        margin-right: 20px;
+        padding-bottom: 10px;
+        color: #c0c0c0;
+    }
+    
+    .time-color {
+        color: #728594;
+    }
+    /*转单弹框*/
+    .transfer-descript {
+        width: 750px;
+        height: 1334px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(40, 40, 40, 0.6);
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .transfer-box {
+        width: 700px;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .transfer-content {
+        width: 650px;
+        background-color: white;
+        padding: 25px;
+    }
+    
+    .selectList {
+        width: 500px;
+        padding-left: 20px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    
+    .select-img {
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        left: 450px;
+        top: 15px;
+    }
+    
+    .word-text {
+        font-size: 30px;
+        color: #bbb;
+        margin-bottom: 20px;
+    }
+    
+    .selectList-text-size {
+        width: 480px;
+        border-style: solid;
+        border-color: #aaa;
+        border-width: 1px;
+        padding-left: 20px;
+        line-height: 60px;
+        height: 60px;
+        font-size:28px;
+    }
+    
+    .submit-transfer {
+        width: 120px;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        justify-content: center;
+        background-color: #3879d9;
+    }
+    
+    .submit-text {
+        font-size: 30px;
+        color: white;
+        text-align: center;
+    }
+    .btn {
+        position: relative;
+        width: 600px;
+        border: none;
+        align-items: flex-end;
+        height: 60px;
+    }
